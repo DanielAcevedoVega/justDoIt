@@ -8,27 +8,26 @@
     <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Just do it.</h1>
-        <input type="text" id="addTask" placeholder="Add a task.">
-        <div>
-            <button>I Got This!</button>
+        <div class="inputAdd__task">
+            <input type="text" id="addTask" placeholder="Add a task.">
+            <button class="btn__input" id="btnAdd">I Got This!</button>
         </div>
     </header>
     <main>
         <section class="time">
-            <span id="time__span"></span>
+            <span id="time__span">.</span>
         </section>
         <section class="list__task">
             <article class="task__article">
-                <div>
+                <div class="task__information">
                     <h4>Proyecto JavaScript</h4>
                     <img src="storage/img/check.svg">
                     <img src="storage/img/trash.svg">
                 </div>
             </article>
         </section>
-
     </main>
 </body>
 </html>

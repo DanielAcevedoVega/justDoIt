@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #565556, #0d3141);
+}
+.header {
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+}
+.inputAdd__task {
+    background: blue;
+    display: flex;
+}
+.time {
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.list__task {
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task__article {
+    background: purple;
+    padding: 5px;
+}
+.task__information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.task__information img{
+    width: 40px;
+}
