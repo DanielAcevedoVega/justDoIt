@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'SKCuriosity-Regular';
+}
+
+@font-face {
+    font-family: 'SKCuriosity-Bold';
+    src: url(../storage/font/SKCuriosity-Bold.ttf);
 }
 body{
     background: linear-gradient(to right, #565556, #0d3141);
@@ -12,10 +18,16 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20vh;
+    padding-top: 12vh;
+}
+.header h1{
+    font-family: 'SKCuriosity-Bold';
+    color: #ffdfdb;
+    font-size: 150px;
 }
 .inputAdd__task {
     background: blue;
+    width: 42%;
     display: flex;
 }
 .time {
