@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'SKCuriosity-Regular';
+    font-family: sans-serif;
 }
 
 @font-face {
@@ -18,17 +18,41 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding-top: 12vh;
 }
 .header h1{
     font-family: 'SKCuriosity-Bold';
     color: #ffdfdb;
-    font-size: 150px;
+    font-size: 120px;
 }
 .inputAdd__task {
+    margin-top: 2rem;
     background: blue;
-    width: 42%;
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.inputAdd__task input{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    min-width: 35%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #f7e2df;
+    background: #181a1a;
+    outline-style: none;
+}
+.inputAdd__task button{
+    padding: 12px;
+    border: none;
+    font-size: 1rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-width: 100px;
+    background: #f7e2df;
 }
 .time {
     background: yellow;
