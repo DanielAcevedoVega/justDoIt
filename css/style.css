@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #f7e2df;
 }
 
 @font-face {
@@ -13,7 +14,6 @@ body{
     background: linear-gradient(to right, #565556, #0d3141);
 }
 .header {
-    background: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,12 +23,10 @@ body{
 }
 .header h1{
     font-family: 'SKCuriosity-Bold';
-    color: #ffdfdb;
     font-size: 120px;
 }
 .inputAdd__task {
     margin-top: 2rem;
-    background: blue;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -41,7 +39,6 @@ body{
     min-width: 35%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    color: #f7e2df;
     background: #181a1a;
     outline-style: none;
 }
@@ -53,23 +50,29 @@ body{
     border-bottom-right-radius: 15px;
     min-width: 100px;
     background: #f7e2df;
+    color: #181a1a;
 }
 .time {
-    background: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 .list__task {
-    background: green;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 .task__article {
-    background: purple;
-    padding: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background: #181a1a;
 }
 .task__information {
     display: flex;
@@ -79,4 +82,8 @@ body{
 }
 .task__information img{
     width: 40px;
+}
+.task__information img:hover{
+    filter: invert(1);
+    cursor: pointer;
 }
