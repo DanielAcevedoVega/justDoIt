@@ -6,8 +6,10 @@ export const indexTask = (res) => {
         <article class="task__article">
             <div class="task__information">
                 <p>${value.task}</p>
-                <img src="storage/img/check.svg">
-                <img src="storage/img/trash.svg">
+                <div>
+                    <img src="storage/img/check.svg">
+                    <img src="storage/img/trash.svg">
+                </div>
             </div>
         </article>`;
     }
