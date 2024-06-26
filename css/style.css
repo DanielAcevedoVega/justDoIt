@@ -93,3 +93,7 @@ body{
     filter: invert(1);
     cursor: pointer;
 }
+.task__article.completed {
+    text-decoration: line-through;
+    opacity: 0.6; 
+}
