@@ -64,6 +64,7 @@ body{
     flex-direction: column;
     margin: 0 auto;
     width: 50vh;
+    margin-bottom: 20px;
 }
 .task__article {
     margin-top: 20px;
