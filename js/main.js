@@ -4,9 +4,12 @@ import { addTask, allTaskList, completedTask, deleteTask, getTask } from "./modu
 let listTask = document.querySelector('.list__task');
 let btnAdd = document.querySelector('#btnAdd');
 let inputTask = document.querySelector('#addTask');
+let timeSpan = document.querySelector('#time__span');
 
 document.addEventListener("DOMContentLoaded", async () => {
     taskListIndex();
+    updateTime();
+    setInterval(updateTime, 1000);
 })
 
 btnAdd.addEventListener('click', async () => {
@@ -57,3 +60,6 @@ const taskListIndex = async () => {
     listTask.innerHTML = indexTask(res);
 }
 
+const updateTime = ()=>{
+    timeSpan.innerText = `${new Date().toLocaleDateString()}, ${new Date().toLocaleTimeString()}`
+}
