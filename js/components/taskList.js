@@ -8,7 +8,7 @@ export const indexTask = (res) => {
                 <p>${value.task}</p>
                 <div>
                     <img src="storage/img/check.svg">
-                    <img src="storage/img/trash.svg">
+                    <img src="storage/img/trash.svg" data-id="${value.id}" class="trash__icon">
                 </div>
             </div>
         </article>`;
